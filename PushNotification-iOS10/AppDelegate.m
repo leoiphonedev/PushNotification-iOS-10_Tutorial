@@ -89,11 +89,10 @@
     NSLog(@"Device_Token     -----> %@\n",deviceTokenstr);
 
 }
-// Called when app recieve notification in foreground 
+// Called when app recieve notification in foreground
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     
     NSLog(@"From native push in ios less than ios 10 == %@",userInfo);
-    
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
