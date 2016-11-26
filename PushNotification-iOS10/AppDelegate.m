@@ -19,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self setUpPushNotification];
     return YES;
 }
 
@@ -64,8 +65,8 @@
         }];
         
     }
-    
     else {
+    
         //for iOS8
         UIUserNotificationSettings *settings =
         [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert |
