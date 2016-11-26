@@ -67,7 +67,7 @@
     }
     else {
     
-        //for iOS8
+        //for iOS8 and version lower than iOS 10
         UIUserNotificationSettings *settings =
         [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert |
          UIUserNotificationTypeBadge |
